@@ -230,7 +230,7 @@ public class BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
         Stack<AnyType> stack = new Stack<>();
         printTreeDesc(root, stack);
         while (!stack.empty()) {
-            System.out.println(stack.pop().toString() + " ");
+            System.out.print(stack.pop().toString() + " ");
         }
     }
 
