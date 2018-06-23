@@ -1,3 +1,9 @@
+/***************************************************
+*   Program Title: Assignment2                     *   
+*   Author: Blake Bartenbach                       *
+*   Class: CSCI3320,  Summer 2018                  *   
+*   Assignment #2                                  *   
+****************************************************/
 package net.alureon.uno;
 
 import java.util.Scanner;
