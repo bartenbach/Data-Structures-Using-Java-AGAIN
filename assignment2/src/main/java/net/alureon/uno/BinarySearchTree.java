@@ -232,6 +232,7 @@ public class BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
         while (!stack.empty()) {
             System.out.print(stack.pop().toString() + " ");
         }
+        System.out.println();
     }
 
     /**
@@ -321,8 +322,9 @@ public class BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
      */
     public void levelOrder() {
         int height = this.height(root);
-        for (int i = 1; i < height; i++) {
+        for (int i = 0; i < height + 1; i++) {
             printLevel(root, i);
+            System.out.println();
         }
     }
 
@@ -333,9 +335,9 @@ public class BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
      */
     private void printLevel(BinaryNode<AnyType> t, int i) {
         if (t != null) {
-            if (i == 1) {
-                System.out.println(t.element);
-            } else {
+            if (i == 0) {
+                System.out.print(t.element + " ");
+            } else if (i > 0) {
                 printLevel(t.left, i-1);
                 printLevel(t.right, i-1);
             }
